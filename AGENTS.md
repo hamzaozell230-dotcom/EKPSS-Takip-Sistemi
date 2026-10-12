@@ -10,6 +10,7 @@
 <!-- LOVABLE:END -->
 
 ## Architecture
+- Package Android with the retained Capacitor project and a separate TanStack SPA build; the standard web build must keep its existing server entry and deployment behavior.
 - Preserve the target TanStack Start bootstrap and dependency pins when importing source; the existing web app already uses compatible file-based routes.
 - Keep the imported browser-local study storage and user-configured AI provider for presentation-only requests; this avoids changing existing data ownership or introducing an unrelated backend.
 - Playlist domain types and status transitions live in a browser-safe library; manual overrides remain authoritative until explicitly reset to automatic tracking.
